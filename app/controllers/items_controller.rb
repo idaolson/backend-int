@@ -36,6 +36,11 @@ class ItemsController < ApplicationController
     end 
   end 
   
+  def destroy
+    @item = Item.find(params[:id])
+    @item.destroy!
+    redirect_to items_path
+  end 
 
   private
 
@@ -43,7 +48,3 @@ class ItemsController < ApplicationController
     params.permit(:title, :description, :unit_price, :stock)
   end 
 end 
-
-
-
-# destroy

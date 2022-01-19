@@ -9,4 +9,5 @@
 <%= @item.unit_price %><br>
 <%= @item.stock %><br><br>
 
-<%= link_to "Edit this item", edit_item_path(@item) %>
+<%= link_to "Edit this item", edit_item_path(@item) %><br>
+<%= link_to "Delete this item", item_path(@item), method: :delete, data: { confirm: "Are you certain?" } %>
