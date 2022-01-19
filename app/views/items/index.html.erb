@@ -1,0 +1,8 @@
+<h2>Items' Inventory</h2>
+
+<% @items.each do |item| %>
+  <%= item.title %><br>
+  <%= item.description %><br>
+  <%= item.unit_price %><br>
+  <%= item.stock %><br><br>
+<% end %>
