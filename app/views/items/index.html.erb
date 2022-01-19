@@ -1,0 +1,14 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %><br></div>
+<% end %>
+  
+<h2>Items Inventory</h2>
+
+<% @items.each do |item| %>
+  <%= link_to item.title , item_path(item) %><br>
+  <%= item.description %><br>
+  <%= item.unit_price %><br>
+  <%= item.stock %><br><br>
+<% end %>
+
+<%= link_to "Create new item", new_item_path %>

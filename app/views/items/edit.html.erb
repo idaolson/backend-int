@@ -1,0 +1,16 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %><br></div>
+<% end %>
+  
+<h2>Update an item:</h2>
+<%= form_with url: item_path(@item), method: :patch, local: true do |f| %>
+  <%= f.label :title, "Item title:" %>
+  <%= f.text_field :title, value: @item.title %><br><br>
+  <%= f.label :description, "Item description:" %>
+  <%= f.text_area :description, value: @item.description %><br><br>
+  <%= f.label :unit_price, "Price per unit:" %>
+  <%= f.number_field :unit_price, :step => 0.01, value: @item.unit_price %><br><br>
+  <%= f.label :stock, "Quantity in stock:" %>
+  <%= f.number_field :stock, min: 0, value: @item.stock %><br><br>
+  <%= f.submit "Update item" %><br><br>
+<% end %>    
