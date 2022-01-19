@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Items CRUD" do 
+RSpec.describe "Items index" do 
   before :each do   
     @item1 = Item.create!(title: "My little pony", description: "She so shiny", unit_price: 10.99, stock: 26)
     @item2 = Item.create!(title: "GI Joe", description: "He's wearing camo", unit_price: 8.99, stock: 21)
