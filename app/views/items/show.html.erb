@@ -1,0 +1,12 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %><br></div>
+<% end %>
+
+<h2>Item Details:</h2>
+
+<%= @item.title %><br>
+<%= @item.description %><br>
+<%= @item.unit_price %><br>
+<%= @item.stock %><br><br>
+
+<%= link_to "Edit this item", edit_item_path(@item) %>
