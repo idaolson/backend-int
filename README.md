@@ -1,7 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Database Schema: 
+
+![schema](https://user-images.githubusercontent.com/81930253/150065427-8099aa25-e698-4ef3-8a15-c7aa408e51dd.jpg)
+
 
 Things you may want to cover:
 
