@@ -17,6 +17,26 @@ class ItemsController < ApplicationController
     end 
   end
 
+  def show
+    @item = Item.find(params[:id])
+  end 
+  
+  def edit
+    @item = Item.find(params[:id])
+  end 
+
+  def update
+    @item = Item.find(params[:id])
+    if @item.update(item_params)
+      flash[:notice] = "Item updated!" 
+      redirect_to item_path(@item)
+    else  
+      flash[:notice] = "Item not updated" 
+      redirect_to edit_item_path(@item)
+    end 
+  end 
+  
+
   private
 
   def item_params
@@ -26,11 +46,4 @@ end
 
 
 
-
-
-
-
-# show
-# edit
-# update
 # destroy
