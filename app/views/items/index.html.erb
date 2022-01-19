@@ -2,10 +2,10 @@
   <div class="notice"><%= flash[:notice] %><br></div>
 <% end %>
   
-<h2>Items' Inventory</h2>
+<h2>Items Inventory</h2>
 
 <% @items.each do |item| %>
-  <%= item.title %><br>
+  <%= link_to item.title , item_path(item) %><br>
   <%= item.description %><br>
   <%= item.unit_price %><br>
   <%= item.stock %><br><br>
