@@ -13,6 +13,8 @@ Ida Olson - [LinkedIn](https://www.linkedin.com/in/idaolson/)
 * Ruby 2.7.2
 * Rails 5.2.6
 
+From the command line: 
+
 1. `git clone git@github.com:idaolson/backend-int.git`
 2. `cd backend-int`
 3. `bundle install`
