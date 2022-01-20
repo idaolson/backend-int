@@ -5,10 +5,11 @@
 <h2>Items Inventory</h2>
 
 <% @items.each do |item| %>
-  <%= link_to item.title , item_path(item) %><br>
+  <%= link_to item.title, item_path(item) %><br>
   <%= item.description %><br>
   <%= item.unit_price %><br>
   <%= item.stock %><br><br>
 <% end %>
 
-<%= link_to "Create new item", new_item_path %>
+<%= link_to "Create new item", new_item_path %><br>
+<%= link_to "Create a shipment", new_shipment_path %>

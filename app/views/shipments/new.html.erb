@@ -1,0 +1,13 @@
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %><br></div>
+<% end %>
+  
+<h2>Create a new shipment:</h2>
+
+<%= form_with url: shipments_path, method: :post, local: true do |f| %>
+  <%= f.label :customer_name, "Customer name:" %>
+  <%= f.text_field :customer_name %><br><br>
+  <%= f.label :email, "Email address:" %>
+  <%= f.text_field :email %><br><br>
+  <%= f.submit "Create shipment" %><br><br>
+<% end %> 
