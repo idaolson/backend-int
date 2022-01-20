@@ -33,7 +33,7 @@ RSpec.describe "Item show/destroy" do
     click_link 'Delete this item'
 
     expect(current_path).to eq(items_path)
-    save_and_open_page
+
     expect(page).to_not have_content(@item4.title) 
     expect(page).to_not have_content(@item4.description) 
     expect(page).to_not have_content(@item4.unit_price) 
