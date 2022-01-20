@@ -18,8 +18,9 @@ Ida Olson - [LinkedIn](https://www.linkedin.com/in/idaolson/)
 3. `bundle install`
 4. `rails db:{create,migrate}`
 5. `rails db:seed`
-6.  run: `rails s` and explore the endpoints below
-7.  run the test suite: `bundle exec rspec`
+6.  run: `rails s` 
+7.  open: http://localhost:3000/items in your browser
+8.  run the test suite: `bundle exec rspec`
 
 ## Project Board 
 
